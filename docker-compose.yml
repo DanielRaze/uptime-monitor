@@ -1,0 +1,13 @@
+services:
+    app:
+      build: .
+      ports:
+        - "127.0.0.1:8000:8000"
+      environment:
+        DB_PATH: /data/uptime.db
+      volumes:
+        - uptime_data:/data
+      restart: unless-stopped
+
+volumes:
+  uptime_data:
