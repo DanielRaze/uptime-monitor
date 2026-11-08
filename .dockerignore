@@ -3,3 +3,7 @@ venv/
 __pycache__/
 uptime.db
 .git/
+.env
+.env.*
+.pytest_cache/
+infra/
